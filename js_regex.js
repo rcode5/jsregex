@@ -17,8 +17,16 @@ $(function() {
       };
       $('#results').html(ms.join('<br/>'));
     }
+    else {
+      $('#results').html('no match');
+    }
+      
   };
   $("input[name=regex], input[name=input]").bind('keypress',function() {
+    processRegex();
+    return true;
+  });
+  $("input[name=regex], input[name=input]").bind('focus',function() {
     processRegex();
     return true;
   });
