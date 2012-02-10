@@ -1,0 +1,99 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  color: #ccccdd;
+  background: #20252b; /* Old browsers */
+
+}
+ul, li { 
+  margin:0;
+  padding:0;
+}
+li {
+  line-height: 1.4em;
+}
+.gradient {
+  background: #30355b; /* Old browsers */
+  background: -moz-linear-gradient(top, #30353b 0%, #30355b 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#30353b), color-stop(100%,#30355b)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #30353b 0%,#30355b 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #30353b 0%,#30355b 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #30353b 0%,#30355b 100%); /* IE10+ */
+  background: linear-gradient(top, #30353b 0%,#30355b 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30353b', endColorstr='#30355b',GradientType=0 ); /* IE6-9 */
+}
+#main {
+  padding: 20px 40px 40px;
+  width: 750px;
+  height: 100%;
+  border: 1px solid #101010;
+  margin: 20px auto 60px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,.25);
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+#main a {
+  color: #eeccdd;
+  text-decoration: none;
+}
+#main h1 {
+  margin: auto;
+  text-align: center;
+}
+#main h3 {
+  text-align: right;
+}
+#main h4 {
+  margin-bottom: 10px;
+}
+#main .entry {
+  margin-bottom: 10px;
+}
+#main label {
+  display:block;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+#main .results ul {
+  list-style: none;
+}
+#main .results li {
+}
+
+#main .results label {
+  margin-bottom: 10px;
+}
+#main  input {
+  width: 90%;
+  border: 1px solid #171a24;
+  padding:10px;
+  font-size:18px;
+  color: #1b1824;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#main .instructions li {
+
+}
+
+#main .meat{
+  padding-top: 10px;
+}
+#main .meat .section {
+  width: 330px;
+  float: left;
+}
+#main .section.results {
+  clear:right;
+}
+#main .afterword {
+  padding-top: 10px;
+  clear: left;
+}
+#main .afterword ul {
+  list-style: none;
+}
+

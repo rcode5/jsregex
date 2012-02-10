@@ -1,24 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-</style>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="css.css" type="text/css" rel="stylesheet"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<title>JS Regex Tester</title>
+<title>Javascript Regex Playground - 2rye.com</title>
 <script src='./js_regex.js'></script>
 </head>
 <body>
-  <form>
-    <label for="input_regex" >JS Regex</label>
-    <input id="input_regex" name='regex'>
-    <label for="input_input" >String to match</label>
-    <input id="input_input" name='input'>
-  </form>
-  <div class='results'>
-    <label>Results</label>
-    <div id='results'></div>
+  <div id="main" class="gradient">
+    <header>
+      <h1>Javascript Regex Playground</h1>
+      <h3>by <a href="http://www.2rye.com">2rye</a></h3>
+    </header>
+    <section class="instructions">
+      <h4>how to</h4>
+      <ol>
+        <li>
+          Type some javascript regular expression in the <i>regex</i> input box.  You don't need to add leading and trailing slashes.  That's done on the automatic.
+        </li>
+        <li>
+          Type a sample string to match against in the other box.
+        </li>
+        <li>
+          Check out the resulting matches.
+        </li>
+        <li>
+          Repeat steps 1-3 until you've figured out the right regular expression.
+        </li>
+      </ol>
+    </section>
+    <section class="meat">
+      <div class="inputs section">
+      <form>
+        <div class="entry">
+        <label for="input_regex" >regex:</label>
+        <input id="input_regex" name='regex' value='(\d{1}\w+)(.*)\s+(\w+[-](\w+))'>
+        </div>
+        <div class="entry">
+        <label for="input_input" >string to match:</label>
+        <input id="input_input" name='input' value='2rye has javascript-fu'>
+        </div>
+      </form>
+      </div>
+      <div class="results section">
+        <div class='results'>
+          <label>results:</label>
+          <div id='results'></div>
+        </div>
+      </div>
+    </section>
+    <section class="afterword">
+      <h4>still to do</h4>
+      <ul>
+        <li>
+          Add modifier support (case insensitive match, ignore whitespace etc)
+        </li>
+      </ul>
+      <h4>links</h4>
+      <ul>
+        <li>
+          <a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp">Javascript Regex at w3schools</a>
+        </li>
+        <li>
+          <a href="http://distillations.2rye.com">distillations, the 2rye blog</a>
+        </li>
+        <li>
+          Inspired by: <a href="http://rubular.com/">Rubular, a Ruby regular expression editor</a>
+        <li>
+      </ul>
+    </section>
   </div>
-       
 </body>
 </html>

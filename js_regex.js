@@ -9,20 +9,22 @@ $(function() {
     var m = str.match(regexp);
     console.log(m);
     var ms = [];
+    $('#results').html('');
     if (m) {
+      var ul = $('<ul>');
       var ii = 0;
       var n = m.length;
       for (; ii < n; ++ii) {
-        ms.push('Match(' + ii + ') = [' + m[ii] + ']');
+        ul.append($('<li>').html('['+ii+'] => [' + m[ii] + ']'));
       };
-      $('#results').html(ms.join('<br/>'));
+      $('#results').append(ul);
     }
     else {
       $('#results').html('no match');
     }
       
   };
-  $("input[name=regex], input[name=input]").bind('keypress',function() {
+  $("input[name=regex], input[name=input]").bind('keyup',function() {
     processRegex();
     return true;
   });
@@ -34,5 +36,7 @@ $(function() {
     processRegex();
     return true;
   });
+  
+  processRegex();
 
 });
