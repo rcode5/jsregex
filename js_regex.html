@@ -17,11 +17,13 @@
       <h3>by <a href="http://www.2rye.com">2rye</a></h3>
     </header>
     <section class="instructions">
-      <h4>how to</h4>
+      <h4>how to play</h4>
       <ol>
         <li>
           Type some javascript regular expression in the <i>regex</i> input box.  You don't need to add leading and trailing slashes.  That's done on the automatic.
         </li>
+        <li>
+          Add modifiers if you like.  <em>i</em> for case-insensitive, <em>m</em> to match across newlines, <em>g</em> for "global" matching.  Check out <a target="_blank" href="http://www.regular-expressions.info/javascript.html">this page</a> for details on modifiers.
         <li>
           Type a sample string to match against in the other box.
         </li>
@@ -37,12 +39,14 @@
       <div class="inputs section">
       <form>
         <div class="entry">
-        <label for="input_regex" >regex:</label>
-        <input id="input_regex" name='regex' value='(\d{1}\w+)(.*)\s+(\w+[-](\w+))'>
+        <label for="input_regex" >regex + modifier:</label>
+        <input id="input_regex" name='regex' value='^(\d{1}\w+)(.*)\s+(\w+[-](\w+))'>
+        <input id="input_modifier" name="modifier" value="mg">
         </div>
         <div class="entry">
         <label for="input_input" >string to match:</label>
-        <input id="input_input" name='input' value='2rye has javascript-fu'>
+        <textarea id="input_input" name='input'>2rye has javascript-fu
+2rye has other-fu too</textarea>
         </div>
       </form>
       </div>
@@ -54,12 +58,6 @@
       </div>
     </section>
     <section class="afterword">
-      <h4>still to do</h4>
-      <ul>
-        <li>
-          Add modifier support (case insensitive match, ignore whitespace etc)
-        </li>
-      </ul>
       <h4>links</h4>
       <ul>
         <li>

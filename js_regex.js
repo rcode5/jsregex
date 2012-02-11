@@ -4,38 +4,43 @@ $(function() {
     if (!regex) return;
     var str = $('#input_input').val();
     if (!str) return;
+    var modifier = $('#input_modifier').val();
     regex = regex.replace(/^\//, '').replace(/\/$/, '');
-    var regexp = new RegExp(regex);
-    var m = str.match(regexp);
-    console.log(m);
-    var ms = [];
-    $('#results').html('');
-    if (m) {
-      var ul = $('<ul>');
-      var ii = 0;
-      var n = m.length;
+    try {
+      var regexp = new RegExp(regex, modifier);
+      var m = str.match(regexp);
+      var ms = [];
+      $('#results').html('');
+      if (m) {
+        var ul = $('<ul>');
+        var ii = 0;
+        var n = m.length;
       for (; ii < n; ++ii) {
         ul.append($('<li>').html('['+ii+'] => [' + m[ii] + ']'));
       };
-      $('#results').append(ul);
+        $('#results').removeClass('error').append(ul);
+      }
+      else {
+        $('#results').removeClass('error').html('no match');
+      }
     }
-    else {
-      $('#results').html('no match');
+    catch(e) {
+      console.log(e);
+      $('#results').addClass('error').html(e.toString());
     }
-      
   };
-  $("input[name=regex], input[name=input]").bind('keyup',function() {
-    processRegex();
-    return true;
-  });
-  $("input[name=regex], input[name=input]").bind('focus',function() {
-    processRegex();
-    return true;
-  });
-  $("input[name=regex], input[name=input]").bind('blur',function() {
-    processRegex();
-    return true;
-  });
+  $("input[name=regex], input[name=modifier], textarea[name=input]")
+    .bind('keyup',function() {
+      processRegex();
+      return true;
+    })
+    .bind('focus',function() {
+      processRegex();
+      return true;
+    }).bind('blur',function() {
+      processRegex();
+      return true;
+    });
   
   processRegex();
 

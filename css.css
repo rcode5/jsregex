@@ -65,8 +65,7 @@ li {
 #main .results label {
   margin-bottom: 10px;
 }
-#main  input {
-  width: 90%;
+#main  input, #main textarea {
   border: 1px solid #171a24;
   padding:10px;
   font-size:18px;
@@ -75,6 +74,17 @@ li {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
+#main input[name=regex] {
+  width: 540px;
+}
+#main input[name=modifier] {
+  width: 105px;
+}
+#main textarea {
+  width: 650px;
+  height: 80px;
+}
+
 #main .instructions li {
 
 }
@@ -83,8 +93,10 @@ li {
   padding-top: 10px;
 }
 #main .meat .section {
-  width: 330px;
   float: left;
+}
+#main .error {
+  color: #f88;
 }
 #main .section.results {
   clear:right;
