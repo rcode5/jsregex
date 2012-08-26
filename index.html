@@ -7,12 +7,13 @@
 <link href="css.css" type="text/css" rel="stylesheet"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta content="Test your Javascript Regular Expressions here with ease." name="description">
-<meta content="javascript, regex, regular expressions, 2rye, rubular, coding, playground, regexp" name="keywords">
+<meta content="javascript, regex, regular expressions, rubular, rcode5, coding, playground, regexp" name="keywords">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-25168776-3']);
+  _gaq.push(['_setAccount', 'UA-32269148-1']);
+  _gaq.push(['_setDomainName', 'rcode5.com']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -22,14 +23,15 @@
   })();
 
 </script>
-<title>Javascript Regex Playground - 2rye.com</title>
+<title>Javascript Regex Playground - rcode5.com</title>
 <script src='./js_regex.js'></script>
 </head>
 <body>
   <div id="main" class="gradient">
+    <a href="https://github.com/bunnymatic/jsregex"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
     <header>
       <h1>Javascript Regex Playground</h1>
-      <h3>by <a href="http://www.2rye.com">2rye</a></h3>
+      <h3>by <a href="http://www.rcode5.com">rcode5</a></h3>
     </header>
     <section class="instructions">
       <h4>how to play</h4>
@@ -55,13 +57,13 @@
       <form>
         <div class="entry">
         <label for="input_regex" >regex + modifier:</label>
-        <input id="input_regex" name='regex' value='^(\d{1}\w+)(.*)\s+(\w+[-](\w+))'>
-        <input id="input_modifier" name="modifier" value="mg">
+        <input id="input_regex" name='regex' value='^(\w+\d{1})\s+(\w+)\s+(\w+-(\w+))'>
+        <input id="input_modifier" name="modifier" value="m">
         </div>
         <div class="entry">
         <label for="input_input" >string to match:</label>
-        <textarea id="input_input" name='input'>2rye has javascript-fu
-2rye has other-fu too</textarea>
+        <textarea id="input_input" name='input'>rcode5 has javascript-fu
+rcode5 has other-fu too</textarea>
         </div>
       </form>
       </div>
@@ -73,22 +75,32 @@
       </div>
     </section>
     <section class="afterword">
-      <h4>links</h4>
       <ul>
         <li>
-          <a href="https://gist.github.com/1744140">This tool on gist.github.com</a>
+          <a target="_blank" href="http://github.com/bunnymatic/jsregex"><img title="source on github" src="/i/github_32.png"/></a>
         </li>
         <li>
-          <a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp">Javascript Regex at w3schools</a>
+          <a target="_blank" href="http://rcode5.wordpress.com"><img title="rcode5 blog" src="/i/wordpress_32.png"/></a>
         </li>
         <li>
-          <a href="http://distillations.2rye.com">distillations, the 2rye blog</a>
+          <a target="_blank" href="http://twitter.com/rcode5"><img title="rcode5 on twittter" src="/i/twitter_32.png"/></a>
         </li>
-        <li>
-          Inspired by: <a href="http://rubular.com/">Rubular, a Ruby regular expression editor</a>
-        <li>
       </ul>
     </section>
+
+    <section class="credits">
+      <div>
+        Inspired by: <a href="http://rubular.com/">Rubular, a Ruby regular expression editor</a>
+      </div>
+      <div>
+        <a target="_blank" href="http://komodomedia.com">social icons from komodomedia.com</a>
+        <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png"></a>
+      </div>
+      <div>
+        <a target="_blank" href="http://designmoo.com/3466/github-icons/">github icon from Jack Hackett</a>
+      </div>
+    </section>
   </div>
+
 </body>
 </html>

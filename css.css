@@ -1,7 +1,7 @@
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 body {
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  color: #ccccdd;
+  font-family: helvetica, sans-serif;
+  color: #ddd;
   background: #20252b; /* Old browsers */
 
 }
@@ -33,9 +33,10 @@ li {
   -webkit-box-shadow: 0 10px 20px rgba(0,0,0,.25);
   -moz-box-shadow: 0 10px 20px rgba(0,0,0,.25);
   box-shadow: 0 10px 20px rgba(0,0,0,.25);
+  position:relative;
 }
 #main a {
-  color: #eeccdd;
+  color: #bbf;
   text-decoration: none;
 }
 #main h1 {
@@ -106,6 +107,26 @@ li {
   clear: left;
 }
 #main .afterword ul {
+  float:right;
   list-style: none;
+  clear:both;
+}
+#main .afterword li {
+  float: left;
+  margin: 10px 2px;
+}
+#main .afterword li:last-child {
+  margin-right: 0;
+}
+
+#main .credits {
+  clear:both;
+  font-size: .7em;
+  line-height: 24px;
+  text-align: right;
+}
+
+#main .credits a img {
+  vertical-align:middle;
 }
 
