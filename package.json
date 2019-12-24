@@ -3,6 +3,6 @@
     "surge": "^0.21.0"
   },
   "scripts": {
-    "deploy": "npm run surge . jsregex.rcode5.com"
+    "deploy": "node_modules/.bin/surge . jsregex.rcode5.com"
   }
 }
