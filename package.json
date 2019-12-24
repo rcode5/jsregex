@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "surge": "^0.19.0"
+    "surge": "^0.21.0"
   },
   "scripts": {
-    "deploy": "yarn surge . jsregex.rcode5.com"
+    "deploy": "npm run surge . jsregex.rcode5.com"
   }
 }
