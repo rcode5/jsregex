@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "surge": "^0.21.0"
+    "surge": "^0.21.5"
   },
   "scripts": {
     "deploy": "node_modules/.bin/surge . jsregex.rcode5.com"
